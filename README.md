@@ -1,9 +1,5 @@
 # Aerial Disaster Image Classification: Comparative Analysis of Deep Learning Models
 
-## Abstract
-
-Timely and accurate classification of aerial images in post-flood scenarios is essential for effective disaster response. However, most existing deep learning models are limited by their reliance on binary classification tasks such as disaster vs no disaster. Furthermore, most existing studies utilize traditional model training approaches that require a high amount of data. These limitations hinder model generalization to diverse real-world conditions. In this study, we address these challenges by utilizing a benchmark dataset that contains drone images encompassing five classes: collapsed building, fire, flooded areas, normal, and traffic incident. The dataset consists of 6,432 images, carefully split into training, validation, and test sets for balanced evaluation. We conduct a comparative analysis of several deep learning models, including MobileNet, Inception, Xception, and ResNet-50. Experimental results demonstrate that MobileNet achieves the highest overall accuracy of 95% and consistently strong F1-scores across all classes, outperforming the other models. These findings highlight the effectiveness and suitability of lightweight deep learning architectures for robust aerial image classification in disaster management applications.
-
 ## Repository Structure
 
 ```
@@ -30,7 +26,7 @@ Timely and accurate classification of aerial images in post-flood scenarios is e
 
 ## Dataset
 
-- **Source**: AIDER benchmark dataset (6,432 drone images)
+- **Source**: [AIDER benchmark dataset](https://github.com/ckyrkou/AIDER) (6,432 drone images)
 - **Classes**: 
   - Collapsed building
   - Fire
@@ -60,7 +56,8 @@ Timely and accurate classification of aerial images in post-flood scenarios is e
    ```
 
 2. **Prepare the dataset**  
-   - Place the AIDER dataset in the appropriate directory as referenced in the notebooks.
+   - Download the AIDER dataset from [here](https://github.com/ckyrkou/AIDER).
+   - Place the dataset in the appropriate directory as referenced in the notebooks.
    - Run `preprocessing.ipynb` to split and preprocess the data.
 
 3. **Train and evaluate models**  
